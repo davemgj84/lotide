@@ -20,7 +20,7 @@ const assertArraysEqual = function(array1, array2) {
   }
 };
 
-// testing calling function below: 
+// testing calling function below:
 
 assertArraysEqual([1, 2, 3], [1, 2, 3]); // should be true
 assertArraysEqual([1, 2, 3], [1, 2, 4]); // should be false
