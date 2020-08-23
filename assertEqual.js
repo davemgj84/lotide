@@ -6,12 +6,14 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// Test Code:
+module.exports = assertEqual;
 
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
+// +++++ TESTS ++++++
 
-assertEqual("Lighthouse Labs", "Lighthouse Labs");
-assertEqual("Hello", "Goodbye");
-assertEqual(3, 3);
-assertEqual(4, 2);
+// assertEqual("Lighthouse Labs", "Bootcamp");
+// assertEqual(1, 1);
+
+// assertEqual("Lighthouse Labs", "Lighthouse Labs");
+// assertEqual("Hello", "Goodbye");
+// assertEqual(3, 3);
+// assertEqual(4, 2);

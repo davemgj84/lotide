@@ -1,10 +1,5 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+const assertEqual = require('./assertEqual');
+const assertObjectEquals = require('./assertObjectsEqual');
 
 const countLetters = function(string) {
   let results = {};
@@ -20,12 +15,13 @@ const countLetters = function(string) {
   return results;
 };
 
+module.exports = countLetters;
+
 // +++++ TESTS +++++
 
-const results1 = countLetters("lighthouse in the house");
-console.log(results1);
+// const results1 = countLetters("lighthouse in the house");
+// assertObjectEquals({ l: 1, i: 2, g: 1, h: 4, t: 2, o: 2, u: 2, s: 2, e: 3, n: 1 }, results1);
+
 
 // ***** Tried to make tests with the assertEquals - but it doesnt work with comparing two objects - *****
-// ***** May need to create an assertObjectEquals function?? *****
-
-// Also doesn't pass ESLint test as assertEqual is assigned a value but is never used
+// ***** Decided to bring it assertObjectsEqual to have proper testing *****

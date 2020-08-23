@@ -1,22 +1,4 @@
-const eqArrays = function(arr1, arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-const assertArraysEqual = function(array1, array2) {
-  if (eqArrays(array1, array2) === true) {
-    console.log(`✅✅✅ Assertion Passed: ${array1} === ${array2}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${array1} !== ${array2}`);
-  }
-};
+const assertArraysEqual = require('./assertArraysEqual');
 
 const letterPositions = function(sentence) {
   const results = {};
@@ -32,7 +14,9 @@ const letterPositions = function(sentence) {
   return results;
 };
 
+module.exports = letterPositions;
+
 // +++++ TESTS +++++
 
-assertArraysEqual(letterPositions("Bootcamp is very challenging").g, [24, 27]);
-assertArraysEqual(letterPositions("David").v, [2]);
+// assertArraysEqual(letterPositions("Bootcamp is very challenging").g, [24, 27]);
+// assertArraysEqual(letterPositions("David").v, [2]);
