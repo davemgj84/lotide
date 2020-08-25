@@ -1,8 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@djar84/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "small lodash clone for education purposes",
   "directories": {
     "test": "test"
   },
@@ -13,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/davemgj84/lotide.git"
   },
-  "author": "",
+  "author": "David Jardine",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/davemgj84/lotide/issues"
